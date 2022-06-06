@@ -15,5 +15,6 @@ public class Consumer {
         System.out.println("consumer");
         System.out.println(demoService.getPermissions(1L));
 
+
     }
 }
