@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+    <!--The application information of the provider is defined to calculate the dependency relationship; stay dubbo-admin or dubbo-monitor This name will be displayed for easy identification-->
+    <dubbo:application name="demotest-consumer" owner="programmer" organization="dubbox"/>
+    <!--towards zookeeper subscribe provider Address of, by zookeeper Timed push-->
+    <dubbo:registry address="zookeeper://localhost:2181"/>
+    <!--use dubbo Protocol call defined api.PermissionService Interface-->
+    <dubbo:reference id="permissionService" interface="com.alibaba.dubbo.demo.DemoService"/>
+</beans>
