@@ -17,7 +17,7 @@
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>dubbo-api</artifactId>
-            <version>1.0-20220606.155359-3</version>
+            <version>1.0-20220607.023416-3</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
